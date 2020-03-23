@@ -1,0 +1,30 @@
+[package]
+name = "bitmask"
+version = "0.1.0"
+authors = ["kgv <kgv@users.noreply.github.com>"]
+license = "MIT OR Apache-2.0"
+description = "Procedural macros for set bit mask."
+homepage = "https://crates.io/crates/bitmask"
+documentation = "https://docs.rs/bitmask"
+repository = "https://github.com/kgv/bitmask"
+readme = "README.md"
+edition = "2018"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+bitflags = "1.2.1"
+darling = "0.10.2"
+failure = "0.1.7"
+itertools = "0.9.0"
+ntapi = "0.3.3"
+proc-macro2 = "1.0.9"
+quote = "1.0.3"
+syn = "1.0.17"
+synstructure = "0.12.3"
+
+[features]
+default = []
+nightly = []
+unstable = []
